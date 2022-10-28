@@ -1,0 +1,113 @@
+.container {
+  background-color: #373737;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+.title {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.gold {
+  color: goldenrod;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.list li {
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: #373737;
+  border-radius: 5px;
+  padding: 3px 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.list li:hover,
+.list li.focus {
+  background-color: goldenrod;
+  box-shadow: 0 0 5px 0 goldenrod;
+}
+.nav {
+  margin-right: 10px;
+}
+
+.navmain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.loginBtn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--white);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: roboto;
+  padding: 0;
+}
+
+.login {
+  margin: 0;
+}
+.login:hover,
+.login:focus {
+  background-color: goldenrod;
+  box-shadow: 0 0 5px 0 goldenrod;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.logout {
+  position: absolute;
+  margin-left: auto;
+  margin-top: 0.5rem /* 8px */;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+  padding-right: 0.5rem;
+  background-color: var(--black50);
+  border-width: 1px;
+  color: var(--white);
+  border-radius: 0.25rem /* 4px */;
+
+  border-color: var(--blue);
+
+  box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000),
+    var(--shadow30);
+}
+
+.logoutBtn1 {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  display: block;
+  padding-left: 0.5rem /* 8px */;
+  padding-right: 0.5rem /* 8px */;
+
+  font-size: 1rem /* 16px */;
+  line-height: 1.25rem /* 20px */;
+  border-radius: 0.25rem /* 4px */;
+  cursor: pointer;
+}
